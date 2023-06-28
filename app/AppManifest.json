@@ -1,13 +1,18 @@
 [
     {
-        "name": "SampleApp",
+        "name": "ppwiper",
         "vehicleModel": {
-            "src": "https://github.com/COVESA/vehicle_signal_specification/releases/download/v3.0/vss_rel_3.0.json",
+            "src": "./app/vspec.json",
             "datapoints": [
                 {
-                    "path": "Vehicle.Speed",
+                    "path": "Vehicle.Body.Hood.IsOpen",
                     "required": "true",
-                    "access": "read"
+                    "access": "write"
+                },
+                {
+                    "path": "Vehicle.Body.Windshield.Front.Wiping.Mode",
+                    "required": "true",
+                    "access": "write"
                 }
             ]
         },
